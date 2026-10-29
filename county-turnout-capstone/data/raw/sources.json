@@ -1,0 +1,61 @@
+{
+  "retrieved_date": "2026-10-28",
+  "elections": {
+    "original_publisher": "MIT Election Data and Science Lab",
+    "dataset": "County Presidential Election Returns 2000-2024",
+    "original_url": "https://doi.org/10.7910/DVN/VOQCHQ",
+    "original_version": "V20",
+    "distribution": "Election Data normalized public mirror; not a direct Harvard download",
+    "mirror_version": "2026-10-26.a942e8daa5",
+    "documentation": "https://electiondata.dev/datasets/county-president/",
+    "urls": [
+      "https://api.electiondata.dev/v1/county-president@2026-10-26.a942e8daa5/table/2020.csv",
+      "https://api.electiondata.dev/v1/county-president@2026-10-26.a942e8daa5/table/2024.csv"
+    ],
+    "transform_note": "Mirror normalizes MEDSL reporting units and combines vote modes where necessary. Candidate rows retain a repeated county totalvotes field; use one county total, not its sum across candidates.",
+    "access_note": "Direct Harvard datafile downloads required a guestbook response. Harvard dataset metadata was successfully retrieved; raw Harvard datafile equality was not independently verified."
+  },
+  "acs": {
+    "original_publisher": "U.S. Census Bureau",
+    "release": "ACS 2024 five-year estimates, covering 2020-2024",
+    "distribution": "Census Reporter public API",
+    "url": "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B01001,B19013,B15003,B03002,B17001&geo_ids=050%7C01000US",
+    "documentation": "https://censusreporter.org/about/",
+    "official_documentation": "https://www.census.gov/programs-surveys/acs/data/data-via-api.html",
+    "tables": [
+      "B01001",
+      "B19013",
+      "B15003",
+      "B03002",
+      "B17001"
+    ],
+    "access_note": "The Census API returned Missing Key. Census Reporter supplied the original Census estimates and margins of error without an account. The preserved API response records its release and column definitions."
+  },
+  "files": [
+    {
+      "path": "data/raw/acs2024_counties.json.gz",
+      "bytes": 3385122,
+      "sha256": "6a8180950deb2a72ad07b8cfd38b8eaa93d475c49cc41cde4ecd922fa4c18b96"
+    },
+    {
+      "path": "data/raw/election_mirror_metadata.json",
+      "bytes": 1745,
+      "sha256": "916ed3ef0f1bbad24e1b123e49df756231e4bbf375c268c57ab03bf47ac2847c"
+    },
+    {
+      "path": "data/raw/elections_2020.csv",
+      "bytes": 1641074,
+      "sha256": "d0bbccb08f050bc2429e91895eea16fbfdea88dbfb34f0bb3eea416f7c884901"
+    },
+    {
+      "path": "data/raw/elections_2024.csv",
+      "bytes": 1511782,
+      "sha256": "ce0e1eeed29b736b8ef16ad4c6237c549fc15f6fed3982eca78ad8aea8018456"
+    },
+    {
+      "path": "data/raw/medsl_dataset_metadata.json",
+      "bytes": 5282,
+      "sha256": "e6288d9d07616dfc8e3d7b17bca05e6162e7a3aa42a6e8ffccfe2c9127ffc0e1"
+    }
+  ]
+}

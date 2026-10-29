@@ -1,0 +1,15 @@
+{
+  "notebook_schema": "PASS",
+  "executed_code_cells": 9,
+  "notebook_errors": 0,
+  "figure_count": 8,
+  "source_hashes": "PASS",
+  "county_keys_and_target_formula": "PASS",
+  "training_and_test_state_overlap": 0,
+  "heldout_predictions_and_metrics_recomputed": "PASS",
+  "relative_readme_links": "PASS",
+  "machine_specific_paths_in_notebook_and_readme": 0,
+  "visual_review": "All eight exported charts inspected",
+  "source_limit": "Normalized election mirror not compared with a direct Harvard raw download",
+  "publication": "Local draft; no GitHub publication or classroom submission"
+}

@@ -1,0 +1,5 @@
+analysis,test_counties,test_mae_pp
+Without population size,493,5.540383149786639
+Without race/ethnicity shares,493,4.944873479594785
+Fixed-model score: reconciliation flag=False,479,5.627890150517158
+Fixed-model score: reconciliation flag=True,14,3.817899051777292

@@ -1,0 +1,199 @@
+{
+  "audit": {
+    "raw_election_2024_rows": 12514,
+    "raw_election_2020_rows": 13656,
+    "acs_counties": 3222,
+    "election_2024_exact_duplicate_rows": 0,
+    "election_2024_reporting_units": 3154,
+    "election_2024_units_without_county_fips": 42,
+    "election_2024_valid_county_units": 3112,
+    "election_2024_reconciliation_flags": 127,
+    "election_2020_exact_duplicate_rows": 0,
+    "election_2020_reporting_units": 3155,
+    "election_2020_units_without_county_fips": 43,
+    "election_2020_valid_county_units": 3112,
+    "election_2020_reconciliation_flags": 0,
+    "acs_negative_sentinel_cells": 0,
+    "county_units_unmatched_to_acs": 8,
+    "acs_counties_without_2024_election_match": 118,
+    "excluded_county_rows": 13,
+    "analysis_counties": 3099,
+    "analysis_states_and_dc": 49,
+    "analysis_presidential_votes": 152985577
+  },
+  "distribution": {
+    "count": 3099.0,
+    "mean": 62.49678465861705,
+    "std": 9.974810996465557,
+    "min": 22.360084477296727,
+    "25%": 56.08288343449435,
+    "50%": 62.77935994593812,
+    "75%": 69.64076166518396,
+    "max": 97.32360097323601
+  },
+  "aggregate_participation_pct": 59.3080145982647,
+  "target_iqr_outliers": 30,
+  "train_counties": 2606,
+  "test_counties": 493,
+  "train_states": [
+    "AL",
+    "AR",
+    "AZ",
+    "CA",
+    "CO",
+    "DC",
+    "DE",
+    "FL",
+    "GA",
+    "HI",
+    "IA",
+    "ID",
+    "IL",
+    "KS",
+    "KY",
+    "LA",
+    "MD",
+    "MI",
+    "MN",
+    "MO",
+    "MS",
+    "MT",
+    "NH",
+    "NJ",
+    "NM",
+    "NY",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VA",
+    "WI",
+    "WY"
+  ],
+  "test_states": [
+    "IN",
+    "MA",
+    "ME",
+    "NC",
+    "ND",
+    "NE",
+    "NV",
+    "VT",
+    "WA",
+    "WV"
+  ],
+  "selected_model": "Ridge regression",
+  "model_metrics": [
+    {
+      "model": "Training-mean baseline",
+      "cv_mae_mean_pp": 8.338665294778568,
+      "cv_mae_sd_pp": 0.7436206846022158,
+      "test_mae_pp": 7.788145740985486,
+      "test_rmse_pp": 9.496795387991899,
+      "test_r2": -0.06071449874260115,
+      "predictions_outside_0_100": 0
+    },
+    {
+      "model": "Ridge regression",
+      "cv_mae_mean_pp": 4.8326365601883925,
+      "cv_mae_sd_pp": 0.242525530682373,
+      "test_mae_pp": 5.576490808970792,
+      "test_rmse_pp": 6.868153582625421,
+      "test_r2": 0.44521547400981853,
+      "predictions_outside_0_100": 0
+    },
+    {
+      "model": "Random forest",
+      "cv_mae_mean_pp": 4.838805296973327,
+      "cv_mae_sd_pp": 0.36105156735464455,
+      "test_mae_pp": 5.404413905528101,
+      "test_rmse_pp": 6.676985848609126,
+      "test_r2": 0.47566933880818485,
+      "predictions_outside_0_100": 0
+    }
+  ],
+  "mae_improvement_over_dummy_pct": 28.39770858903879,
+  "top_correlations": [
+    {
+      "feature": "pct_poverty",
+      "spearman": -0.5419269304264566
+    },
+    {
+      "feature": "pct_age_18_29",
+      "spearman": -0.5232059404788318
+    },
+    {
+      "feature": "pct_age_65_plus",
+      "spearman": 0.46567336184220426
+    },
+    {
+      "feature": "pct_nonhispanic_white",
+      "spearman": 0.44168332679416433
+    }
+  ],
+  "top_importance": [
+    {
+      "feature": "pct_bachelors_plus",
+      "mae_increase_pp": 0.625405607625256,
+      "repeat_sd_pp": 0.0789949164438828
+    },
+    {
+      "feature": "pct_age_18_29",
+      "mae_increase_pp": 0.5801625166274555,
+      "repeat_sd_pp": 0.1297496002652619
+    },
+    {
+      "feature": "log_population",
+      "mae_increase_pp": 0.5582087050589071,
+      "repeat_sd_pp": 0.1215005171997882
+    },
+    {
+      "feature": "pct_nonhispanic_white",
+      "mae_increase_pp": 0.48105511555296243,
+      "repeat_sd_pp": 0.08974446138183201
+    }
+  ],
+  "sensitivity": [
+    {
+      "analysis": "Without population size",
+      "test_counties": 493,
+      "test_mae_pp": 5.540383149786639
+    },
+    {
+      "analysis": "Without race/ethnicity shares",
+      "test_counties": 493,
+      "test_mae_pp": 4.944873479594785
+    },
+    {
+      "analysis": "Fixed-model score: reconciliation flag=False",
+      "test_counties": 479,
+      "test_mae_pp": 5.627890150517158
+    },
+    {
+      "analysis": "Fixed-model score: reconciliation flag=True",
+      "test_counties": 14,
+      "test_mae_pp": 3.817899051777292
+    }
+  ],
+  "nonmissing_predictor_cells": 34088,
+  "missing_predictor_cells": 1,
+  "features": [
+    "log_population",
+    "pct_age_18_29",
+    "pct_age_65_plus",
+    "median_household_income",
+    "pct_bachelors_plus",
+    "pct_poverty",
+    "pct_nonhispanic_white",
+    "pct_nonhispanic_black",
+    "pct_hispanic",
+    "prior_dem_share_pct",
+    "prior_competitiveness"
+  ]
+}

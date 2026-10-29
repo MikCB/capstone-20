@@ -1,0 +1,16 @@
+model,fold,mae_pp
+Training-mean baseline,1,9.268944508324218
+Training-mean baseline,2,7.838724097778873
+Training-mean baseline,3,8.966933338949103
+Training-mean baseline,4,8.075334202265061
+Training-mean baseline,5,7.543390326575591
+Ridge regression,1,4.667551435539121
+Ridge regression,2,5.144333497802283
+Ridge regression,3,4.811595740354174
+Ridge regression,4,4.543422598566842
+Ridge regression,5,4.996279528679542
+Random forest,1,4.819687564379648
+Random forest,2,5.050529579031496
+Random forest,3,4.94197943320742
+Random forest,4,4.231648001012559
+Random forest,5,5.1501819072355115
