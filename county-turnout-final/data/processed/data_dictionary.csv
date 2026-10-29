@@ -1,0 +1,14 @@
+variable,meaning,units,source_or_formula
+county_fips,Five-digit Census county identifier,identifier,Election source and Census geography
+state,State or DC abbreviation,validation group,Election source
+total_votes,Presidential votes in 2024,votes,One total per jurisdiction; Kansas City plus Jackson combined
+adult_population,ACS estimated residents age 18+,residents,B01001 total minus male/female under-18 bins
+participation_pct,2024 presidential participation proxy,percentage points,100 times presidential votes / estimated adult population
+log_population,County population (log10),log10 residents,Exact formula in this notebook; Census table definitions preserved in raw JSON
+pct_age_18_29,Residents age 18–29 (%),percent or 0–100 index,Exact formula in this notebook; Census table definitions preserved in raw JSON
+pct_age_65_plus,Residents age 65+ (%),percent or 0–100 index,Exact formula in this notebook; Census table definitions preserved in raw JSON
+median_household_income,Median household income (2024 dollars),2024 dollars,Exact formula in this notebook; Census table definitions preserved in raw JSON
+pct_bachelors_plus,Adults 25+ with bachelor degree or higher (%),percent or 0–100 index,Exact formula in this notebook; Census table definitions preserved in raw JSON
+pct_poverty,Residents below poverty threshold (%),percent or 0–100 index,Exact formula in this notebook; Census table definitions preserved in raw JSON
+prior_dem_share_pct,2020 Democratic two-party share (%),percent or 0–100 index,Exact formula in this notebook; Census table definitions preserved in raw JSON
+prior_competitiveness,2020 two-party competitiveness (0–100),percent or 0–100 index,Exact formula in this notebook; Census table definitions preserved in raw JSON

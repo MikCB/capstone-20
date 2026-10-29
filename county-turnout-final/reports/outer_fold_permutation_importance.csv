@@ -1,0 +1,41 @@
+outer_fold,feature,label,test_counties,mae_increase_pp,permutation_repeat_sd_pp
+1,log_population,County population (log10),619,0.33063542748766084,0.04252954427483816
+1,pct_age_18_29,Residents age 18–29 (%),619,1.2712551775173107,0.09471506606775608
+1,pct_age_65_plus,Residents age 65+ (%),619,1.4671856144371838,0.09858069838645198
+1,median_household_income,Median household income (2024 dollars),619,0.2918272440323705,0.03883056451398544
+1,pct_bachelors_plus,Adults 25+ with bachelor degree or higher (%),619,0.7189183388404693,0.08441279134096129
+1,pct_poverty,Residents below poverty threshold (%),619,0.893916062279312,0.08801720540990876
+1,prior_dem_share_pct,2020 Democratic two-party share (%),619,0.008205973057538563,0.02719296383569708
+1,prior_competitiveness,2020 two-party competitiveness (0–100),619,0.021933731587341243,0.02315064702498981
+2,log_population,County population (log10),619,0.03668103239284437,0.021452366897173947
+2,pct_age_18_29,Residents age 18–29 (%),619,0.6357400415460513,0.08696352184119799
+2,pct_age_65_plus,Residents age 65+ (%),619,0.4063005755777611,0.06724152513373703
+2,median_household_income,Median household income (2024 dollars),619,0.4633558044305419,0.03353444085366905
+2,pct_bachelors_plus,Adults 25+ with bachelor degree or higher (%),619,1.1181092177473402,0.1051569475632113
+2,pct_poverty,Residents below poverty threshold (%),619,0.8329869615261853,0.05186520610459067
+2,prior_dem_share_pct,2020 Democratic two-party share (%),619,0.06777172276599386,0.012247907419036223
+2,prior_competitiveness,2020 two-party competitiveness (0–100),619,0.0292589389769905,0.014004772029686604
+3,log_population,County population (log10),619,0.27366688997266597,0.020135312820739194
+3,pct_age_18_29,Residents age 18–29 (%),619,1.287883317892432,0.08861939128172834
+3,pct_age_65_plus,Residents age 65+ (%),619,1.1146103494372173,0.08991394872041628
+3,median_household_income,Median household income (2024 dollars),619,0.2058741937204419,0.10655844372495368
+3,pct_bachelors_plus,Adults 25+ with bachelor degree or higher (%),619,0.39452336395831533,0.09715339538151038
+3,pct_poverty,Residents below poverty threshold (%),619,0.5706820429877861,0.10773219640233454
+3,prior_dem_share_pct,2020 Democratic two-party share (%),619,-0.012408627688936913,0.013335738236757658
+3,prior_competitiveness,2020 two-party competitiveness (0–100),619,0.1005819227738648,0.03800247219505731
+4,log_population,County population (log10),623,0.40090076644221195,0.02686744291651168
+4,pct_age_18_29,Residents age 18–29 (%),623,1.0100143980424034,0.06763367793659958
+4,pct_age_65_plus,Residents age 65+ (%),623,0.7366741847328275,0.07239500822101642
+4,median_household_income,Median household income (2024 dollars),623,0.1287141327610497,0.028624664691352997
+4,pct_bachelors_plus,Adults 25+ with bachelor degree or higher (%),623,0.5964699752166608,0.060155341578636494
+4,pct_poverty,Residents below poverty threshold (%),623,0.5769102472617343,0.05771869797767959
+4,prior_dem_share_pct,2020 Democratic two-party share (%),623,-0.0019958500825769665,0.01832903684313123
+4,prior_competitiveness,2020 two-party competitiveness (0–100),623,-0.053553459300290096,0.020791474921651603
+5,log_population,County population (log10),619,0.11630521561059382,0.045845108977391635
+5,pct_age_18_29,Residents age 18–29 (%),619,1.131149750225116,0.12803122298542213
+5,pct_age_65_plus,Residents age 65+ (%),619,0.9948475967873364,0.07622848801088841
+5,median_household_income,Median household income (2024 dollars),619,0.012710738585045345,0.03486885165665557
+5,pct_bachelors_plus,Adults 25+ with bachelor degree or higher (%),619,1.0541332145335691,0.08789190632287715
+5,pct_poverty,Residents below poverty threshold (%),619,0.7481702552488433,0.07371491335494618
+5,prior_dem_share_pct,2020 Democratic two-party share (%),619,0.04208484319446315,0.021584406918148228
+5,prior_competitiveness,2020 two-party competitiveness (0–100),619,0.06703131549427466,0.03490746896173866

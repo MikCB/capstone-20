@@ -1,0 +1,21 @@
+{
+  "family": "Gradient boosting",
+  "parameters": {
+    "model": "HistGradientBoostingRegressor",
+    "model__l2_regularization": 0.0,
+    "model__learning_rate": 0.05,
+    "model__max_leaf_nodes": 7
+  },
+  "selection_cv_mae_pp": 5.159359539026384,
+  "features": [
+    "log_population",
+    "pct_age_18_29",
+    "pct_age_65_plus",
+    "median_household_income",
+    "pct_bachelors_plus",
+    "pct_poverty",
+    "prior_dem_share_pct",
+    "prior_competitiveness"
+  ],
+  "evaluation": "Use nested selection procedure outer predictions, not this full-data inner score, for performance reporting."
+}

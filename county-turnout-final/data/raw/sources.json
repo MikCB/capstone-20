@@ -1,0 +1,75 @@
+{
+  "retrieved_date": "2026-10-28",
+  "final_analysis_date": "2026-10-29",
+  "basis_commit": "8ca462f0b2f3b852a06df3bd2c165066591aa0e0",
+  "basis_repository": "https://github.com/MikCB/capstone-20",
+  "raw_election_files_match_published_module20_git_blobs": true,
+  "census_snapshot": "Same locally preserved Census Reporter JSON response used for Module 20; recompressed deterministically for this package.",
+  "elections": {
+    "publisher": "MIT Election Data and Science Lab",
+    "dataset": "County Presidential Election Returns 2000-2024",
+    "source_url": "https://doi.org/10.7910/DVN/VOQCHQ",
+    "source_version": "V20",
+    "distribution": "Election Data normalized public mirror",
+    "mirror_version": "2026-10-26.a942e8daa5",
+    "documentation": "https://electiondata.dev/datasets/county-president/",
+    "download_urls": [
+      "https://api.electiondata.dev/v1/county-president@2026-10-26.a942e8daa5/table/2020.csv",
+      "https://api.electiondata.dev/v1/county-president@2026-10-26.a942e8daa5/table/2024.csv"
+    ],
+    "limit": "Direct Harvard datafile equality has not been independently checked. Mirror normalizes reporting units and combines vote modes where necessary."
+  },
+  "acs": {
+    "publisher": "U.S. Census Bureau",
+    "release": "acs2024_5yr",
+    "period": "2020-2024",
+    "distribution": "Census Reporter API",
+    "download_url": "https://api.censusreporter.org/1.0/data/show/acs2024_5yr?table_ids=B01001,B19013,B15003,B03002,B17001&geo_ids=050%7C01000US",
+    "documentation": "https://censusreporter.org/about/",
+    "official_documentation": "https://www.census.gov/programs-surveys/acs/data/data-via-api.html",
+    "tables": [
+      "B01001",
+      "B15003",
+      "B17001",
+      "B19013",
+      "B03002"
+    ]
+  },
+  "county_harmonization": {
+    "county_fips": "29095",
+    "rule": "For both 2020 and 2024, add the separately reported Kansas City election-board jurisdiction to the Jackson County election-board jurisdiction; their disjoint areas together cover Jackson County, Missouri.",
+    "jurisdiction_sources": [
+      "https://kceb.org/board/faq/",
+      "https://jcebmo.org/election-information/jurisdiction/"
+    ],
+    "checked_date": "2026-10-29",
+    "interpretation": "The geographic aggregation is an analytical harmonization based on the boards' stated jurisdictions, not a change to raw source files."
+  },
+  "files": [
+    {
+      "path": "data/raw/acs2024_counties.json.gz",
+      "bytes": 3385122,
+      "sha256": "53e4510fd70f0cf40dcec941a9ca2b2d40a56b3438cacf1e42a7bb5ce5d45a0e"
+    },
+    {
+      "path": "data/raw/election_mirror_metadata.json",
+      "bytes": 1745,
+      "sha256": "916ed3ef0f1bbad24e1b123e49df756231e4bbf375c268c57ab03bf47ac2847c"
+    },
+    {
+      "path": "data/raw/elections_2020.csv",
+      "bytes": 1641074,
+      "sha256": "d0bbccb08f050bc2429e91895eea16fbfdea88dbfb34f0bb3eea416f7c884901"
+    },
+    {
+      "path": "data/raw/elections_2024.csv",
+      "bytes": 1511782,
+      "sha256": "ce0e1eeed29b736b8ef16ad4c6237c549fc15f6fed3982eca78ad8aea8018456"
+    },
+    {
+      "path": "data/raw/medsl_dataset_metadata.json",
+      "bytes": 5282,
+      "sha256": "e6288d9d07616dfc8e3d7b17bca05e6162e7a3aa42a6e8ffccfe2c9127ffc0e1"
+    }
+  ]
+}

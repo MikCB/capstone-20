@@ -1,0 +1,9 @@
+feature,label,mae_increase_pp,outer_fold_sd_pp
+pct_age_18_29,Residents age 18–29 (%),1.0671347143418524,0.26639120728611626
+pct_age_65_plus,Residents age 65+ (%),0.9436561592193614,0.39922462103200096
+pct_bachelors_plus,Adults 25+ with bachelor degree or higher (%),0.7761985395851276,0.3063534084767776
+pct_poverty,Residents below poverty threshold (%),0.7243425712772303,0.14703247727379137
+log_population,County population (log10),0.23185634059876367,0.15126687733826716
+median_household_income,Median household income (2024 dollars),0.22037795572951707,0.1702068258152266
+prior_competitiveness,2020 two-party competitiveness (0–100),0.03293870681614035,0.05777844131883468
+prior_dem_share_pct,2020 Democratic two-party share (%),0.020702277028474297,0.03331830260379884

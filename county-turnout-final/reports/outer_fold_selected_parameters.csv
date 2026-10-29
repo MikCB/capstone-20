@@ -1,0 +1,6 @@
+fold,selected_family,inner_cv_mae_pp,parameters
+1,Gradient boosting,5.0528674980960435,"{""model"": ""HistGradientBoostingRegressor"", ""model__l2_regularization"": 0.0, ""model__learning_rate"": 0.05, ""model__max_leaf_nodes"": 7}"
+2,Gradient boosting,5.18209924891113,"{""model"": ""HistGradientBoostingRegressor"", ""model__l2_regularization"": 1.0, ""model__learning_rate"": 0.05, ""model__max_leaf_nodes"": 7}"
+3,Gradient boosting,5.171934217741359,"{""model"": ""HistGradientBoostingRegressor"", ""model__l2_regularization"": 1.0, ""model__learning_rate"": 0.05, ""model__max_leaf_nodes"": 7}"
+4,Gradient boosting,5.321037905537703,"{""model"": ""HistGradientBoostingRegressor"", ""model__l2_regularization"": 1.0, ""model__learning_rate"": 0.05, ""model__max_leaf_nodes"": 7}"
+5,Gradient boosting,5.32560112964619,"{""model"": ""HistGradientBoostingRegressor"", ""model__l2_regularization"": 1.0, ""model__learning_rate"": 0.05, ""model__max_leaf_nodes"": 7}"

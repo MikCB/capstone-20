@@ -1,0 +1,103 @@
+{
+  "audit": {
+    "raw_election_2024_rows": 12514,
+    "raw_election_2020_rows": 13656,
+    "acs_counties": 3222,
+    "election_2024_exact_duplicate_rows": 0,
+    "election_2024_reporting_units": 3154,
+    "election_2024_units_without_county_fips": 42,
+    "election_2024_valid_county_units": 3112,
+    "election_2024_reconciliation_flags": 127,
+    "election_2020_exact_duplicate_rows": 0,
+    "election_2020_reporting_units": 3155,
+    "election_2020_units_without_county_fips": 43,
+    "election_2020_valid_county_units": 3112,
+    "election_2020_reconciliation_flags": 0,
+    "election_2020_kansas_city_votes_recovered": 136645,
+    "election_2024_kansas_city_votes_recovered": 124288,
+    "acs_negative_sentinel_cells": 0,
+    "county_units_unmatched_to_acs": 8,
+    "acs_counties_without_2024_election_match": 118,
+    "excluded_county_rows": 13,
+    "analysis_counties": 3099,
+    "analysis_states_and_dc": 49,
+    "analysis_presidential_votes": 153109865
+  },
+  "distribution": {
+    "count": 3099.0,
+    "mean": 62.50404735436777,
+    "std": 9.963030572306153,
+    "min": 22.360084477296727,
+    "25%": 56.095242449777125,
+    "50%": 62.77935994593812,
+    "75%": 69.64076166518396,
+    "max": 97.32360097323601
+  },
+  "aggregate_participation_pct": 59.35619740518636,
+  "target_iqr_outliers": 29,
+  "missing_predictor_cells": 1,
+  "features": [
+    "log_population",
+    "pct_age_18_29",
+    "pct_age_65_plus",
+    "median_household_income",
+    "pct_bachelors_plus",
+    "pct_poverty",
+    "prior_dem_share_pct",
+    "prior_competitiveness"
+  ],
+  "feature_labels": {
+    "log_population": "County population (log10)",
+    "pct_age_18_29": "Residents age 18\u201329 (%)",
+    "pct_age_65_plus": "Residents age 65+ (%)",
+    "median_household_income": "Median household income (2024 dollars)",
+    "pct_bachelors_plus": "Adults 25+ with bachelor degree or higher (%)",
+    "pct_poverty": "Residents below poverty threshold (%)",
+    "prior_dem_share_pct": "2020 Democratic two-party share (%)",
+    "prior_competitiveness": "2020 two-party competitiveness (0\u2013100)",
+    "participation_pct": "2024 presidential participation proxy (%)"
+  },
+  "top_correlations": [
+    {
+      "feature": "pct_poverty",
+      "label": "Residents below poverty threshold (%)",
+      "spearman": -0.542060446469588
+    },
+    {
+      "feature": "pct_age_18_29",
+      "label": "Residents age 18\u201329 (%)",
+      "spearman": -0.5230334996610431
+    },
+    {
+      "feature": "pct_age_65_plus",
+      "label": "Residents age 65+ (%)",
+      "spearman": 0.4654729192414645
+    },
+    {
+      "feature": "median_household_income",
+      "label": "Median household income (2024 dollars)",
+      "spearman": 0.4128783649369182
+    }
+  ],
+  "jackson_county": {
+    "total_votes": 318017.0,
+    "adult_population": 552217.0,
+    "participation_pct": 57.589136154808706
+  },
+  "harmonization": [
+    {
+      "year": 2020,
+      "county_fips": "29095",
+      "county_total_before": 196418,
+      "separate_kansas_city_votes": 136645,
+      "corrected_county_total": 333063
+    },
+    {
+      "year": 2024,
+      "county_fips": "29095",
+      "county_total_before": 193729,
+      "separate_kansas_city_votes": 124288,
+      "corrected_county_total": 318017
+    }
+  ]
+}

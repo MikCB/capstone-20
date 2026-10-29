@@ -1,0 +1,251 @@
+{
+  "analysis_date": "2026-10-29",
+  "counties": 3099,
+  "states_and_dc": 49,
+  "feature_count": 8,
+  "features": [
+    "log_population",
+    "pct_age_18_29",
+    "pct_age_65_plus",
+    "median_household_income",
+    "pct_bachelors_plus",
+    "pct_poverty",
+    "prior_dem_share_pct",
+    "prior_competitiveness"
+  ],
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "candidates_per_search": 21,
+  "nested_candidate_cv_fits": 315,
+  "full_data_candidate_cv_fits": 105,
+  "model_comparison": [
+    {
+      "model": "Mean baseline",
+      "mae_pp": 8.048556181196105,
+      "rmse_pp": 10.082092120461654,
+      "r2": -0.024374029396056596,
+      "predictions_outside_0_100": 0
+    },
+    {
+      "model": "Ridge regression",
+      "mae_pp": 5.536139856006673,
+      "rmse_pp": 7.1012268266928,
+      "r2": 0.4918124665791199,
+      "predictions_outside_0_100": 0
+    },
+    {
+      "model": "Random forest",
+      "mae_pp": 5.2154445290773515,
+      "rmse_pp": 6.670202282165047,
+      "r2": 0.5516313427066509,
+      "predictions_outside_0_100": 0
+    },
+    {
+      "model": "Gradient boosting",
+      "mae_pp": 5.1722830623776375,
+      "rmse_pp": 6.59084635487522,
+      "r2": 0.5622364355655034,
+      "predictions_outside_0_100": 0
+    },
+    {
+      "model": "Nested selection procedure",
+      "mae_pp": 5.1722830623776375,
+      "rmse_pp": 6.59084635487522,
+      "r2": 0.5622364355655034,
+      "predictions_outside_0_100": 0
+    }
+  ],
+  "procedure_metrics": {
+    "mae_pp": 5.1722830623776375,
+    "rmse_pp": 6.59084635487522,
+    "r2": 0.5622364355655034
+  },
+  "baseline_metrics": {
+    "mae_pp": 8.048556181196105,
+    "rmse_pp": 10.082092120461654,
+    "r2": -0.024374029396056596
+  },
+  "mae_reduction_pct": 35.73651042578696,
+  "uncertainty": {
+    "draws": 2000,
+    "resampling_unit": "state/DC group",
+    "model_mae_95pct_interval_pp": [
+      4.70001656984059,
+      5.6253344267140895
+    ],
+    "baseline_minus_model_mae_95pct_interval_pp": [
+      2.274251750366123,
+      3.4750141917305695
+    ],
+    "interpretation": "Approximate geographic resampling interval conditional on fixed out-of-fold predictions; not ACS or full model-refitting uncertainty."
+  },
+  "outer_selected_families": {
+    "Gradient boosting": 5
+  },
+  "final_fitted_family": "Gradient boosting",
+  "final_parameters": {
+    "model": "HistGradientBoostingRegressor",
+    "model__l2_regularization": 0.0,
+    "model__learning_rate": 0.05,
+    "model__max_leaf_nodes": 7
+  },
+  "top_importance": [
+    {
+      "feature": "pct_age_18_29",
+      "label": "Residents age 18\u201329 (%)",
+      "mae_increase_pp": 1.0671347143418524,
+      "outer_fold_sd_pp": 0.26639120728611626
+    },
+    {
+      "feature": "pct_age_65_plus",
+      "label": "Residents age 65+ (%)",
+      "mae_increase_pp": 0.9436561592193614,
+      "outer_fold_sd_pp": 0.39922462103200096
+    },
+    {
+      "feature": "pct_bachelors_plus",
+      "label": "Adults 25+ with bachelor degree or higher (%)",
+      "mae_increase_pp": 0.7761985395851276,
+      "outer_fold_sd_pp": 0.3063534084767776
+    },
+    {
+      "feature": "pct_poverty",
+      "label": "Residents below poverty threshold (%)",
+      "mae_increase_pp": 0.7243425712772303,
+      "outer_fold_sd_pp": 0.14703247727379137
+    }
+  ],
+  "measurement_checks": [
+    {
+      "subset": "Source totals reconcile",
+      "counties": 2972,
+      "mae_pp": 5.206364452338835,
+      "rmse_pp": 6.632673677507297,
+      "r2": 0.5609525452408627
+    },
+    {
+      "subset": "Source candidate-sum discrepancy flagged",
+      "counties": 127,
+      "mae_pp": 4.374724865805382,
+      "rmse_pp": 5.522294883177359,
+      "r2": 0.34997525329272616
+    },
+    {
+      "subset": "Estimated adult population below 1,000",
+      "counties": 41,
+      "mae_pp": 9.96169927756321,
+      "rmse_pp": 11.972527518197948,
+      "r2": -0.1979220820566805
+    },
+    {
+      "subset": "Estimated adult population at least 1,000",
+      "counties": 3058,
+      "mae_pp": 5.108069175908505,
+      "rmse_pp": 6.488437553094016,
+      "r2": 0.5629414024994197
+    }
+  ],
+  "eda": {
+    "audit": {
+      "raw_election_2024_rows": 12514,
+      "raw_election_2020_rows": 13656,
+      "acs_counties": 3222,
+      "election_2024_exact_duplicate_rows": 0,
+      "election_2024_reporting_units": 3154,
+      "election_2024_units_without_county_fips": 42,
+      "election_2024_valid_county_units": 3112,
+      "election_2024_reconciliation_flags": 127,
+      "election_2020_exact_duplicate_rows": 0,
+      "election_2020_reporting_units": 3155,
+      "election_2020_units_without_county_fips": 43,
+      "election_2020_valid_county_units": 3112,
+      "election_2020_reconciliation_flags": 0,
+      "election_2020_kansas_city_votes_recovered": 136645,
+      "election_2024_kansas_city_votes_recovered": 124288,
+      "acs_negative_sentinel_cells": 0,
+      "county_units_unmatched_to_acs": 8,
+      "acs_counties_without_2024_election_match": 118,
+      "excluded_county_rows": 13,
+      "analysis_counties": 3099,
+      "analysis_states_and_dc": 49,
+      "analysis_presidential_votes": 153109865
+    },
+    "distribution": {
+      "count": 3099.0,
+      "mean": 62.50404735436777,
+      "std": 9.963030572306153,
+      "min": 22.360084477296727,
+      "25%": 56.095242449777125,
+      "50%": 62.77935994593812,
+      "75%": 69.64076166518396,
+      "max": 97.32360097323601
+    },
+    "aggregate_participation_pct": 59.35619740518636,
+    "target_iqr_outliers": 29,
+    "missing_predictor_cells": 1,
+    "features": [
+      "log_population",
+      "pct_age_18_29",
+      "pct_age_65_plus",
+      "median_household_income",
+      "pct_bachelors_plus",
+      "pct_poverty",
+      "prior_dem_share_pct",
+      "prior_competitiveness"
+    ],
+    "feature_labels": {
+      "log_population": "County population (log10)",
+      "pct_age_18_29": "Residents age 18\u201329 (%)",
+      "pct_age_65_plus": "Residents age 65+ (%)",
+      "median_household_income": "Median household income (2024 dollars)",
+      "pct_bachelors_plus": "Adults 25+ with bachelor degree or higher (%)",
+      "pct_poverty": "Residents below poverty threshold (%)",
+      "prior_dem_share_pct": "2020 Democratic two-party share (%)",
+      "prior_competitiveness": "2020 two-party competitiveness (0\u2013100)",
+      "participation_pct": "2024 presidential participation proxy (%)"
+    },
+    "top_correlations": [
+      {
+        "feature": "pct_poverty",
+        "label": "Residents below poverty threshold (%)",
+        "spearman": -0.542060446469588
+      },
+      {
+        "feature": "pct_age_18_29",
+        "label": "Residents age 18\u201329 (%)",
+        "spearman": -0.5230334996610431
+      },
+      {
+        "feature": "pct_age_65_plus",
+        "label": "Residents age 65+ (%)",
+        "spearman": 0.4654729192414645
+      },
+      {
+        "feature": "median_household_income",
+        "label": "Median household income (2024 dollars)",
+        "spearman": 0.4128783649369182
+      }
+    ],
+    "jackson_county": {
+      "total_votes": 318017.0,
+      "adult_population": 552217.0,
+      "participation_pct": 57.589136154808706
+    },
+    "harmonization": [
+      {
+        "year": 2020,
+        "county_fips": "29095",
+        "county_total_before": 196418,
+        "separate_kansas_city_votes": 136645,
+        "corrected_county_total": 333063
+      },
+      {
+        "year": 2024,
+        "county_fips": "29095",
+        "county_total_before": 193729,
+        "separate_kansas_city_votes": 124288,
+        "corrected_county_total": 318017
+      }
+    ]
+  }
+}

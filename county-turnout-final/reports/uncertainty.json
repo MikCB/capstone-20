@@ -1,0 +1,13 @@
+{
+  "draws": 2000,
+  "resampling_unit": "state/DC group",
+  "model_mae_95pct_interval_pp": [
+    4.70001656984059,
+    5.6253344267140895
+  ],
+  "baseline_minus_model_mae_95pct_interval_pp": [
+    2.274251750366123,
+    3.4750141917305695
+  ],
+  "interpretation": "Approximate geographic resampling interval conditional on fixed out-of-fold predictions; not ACS or full model-refitting uncertainty."
+}

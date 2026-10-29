@@ -1,0 +1,37 @@
+{
+  "notebooks": [
+    {
+      "path": "notebooks/01_data_preparation_eda.ipynb",
+      "executed_cells": 7,
+      "errors": 0,
+      "embedded_figures": 5
+    },
+    {
+      "path": "notebooks/02_model_selection_and_evaluation.ipynb",
+      "executed_cells": 7,
+      "errors": 0,
+      "embedded_figures": 5
+    }
+  ],
+  "raw_source_checksums": "PASS",
+  "county_identifiers_and_target_formula": "PASS",
+  "jackson_county_2020_and_2024_harmonization": "PASS",
+  "outer_and_inner_state_separation": "PASS",
+  "every_county_predicted_once_out_of_fold": "PASS",
+  "metrics_recomputed_from_saved_predictions": "PASS",
+  "grid_search_candidate_counts_and_training_only_selection": "PASS",
+  "state_resampling_intervals_recomputed": "PASS",
+  "relative_document_links": "PASS",
+  "figure_count": 10,
+  "visual_review": "All ten final figure PNGs inspected",
+  "readme_review_html_has_embedded_figures_and_tables": "PASS",
+  "rubric_coverage": "All five categories mapped; this is not an awarded grade",
+  "publication": "Local final package; not published or submitted by the assistant",
+  "limits": [
+    "Retrospective single-election VAP proxy",
+    "Feature choices informed by earlier exploratory work",
+    "Public mirror not independently matched to a direct Harvard raw datafile",
+    "Approximate conditional state-resampling intervals",
+    "Campaign spending, outreach effects, and future-election forecasting not established"
+  ]
+}
